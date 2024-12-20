@@ -332,6 +332,9 @@ button {
 }
 /* #endregion hero-image */
 /* #region first section */
+.section-first{
+  margin-bottom: 96px;
+}
 .icon-rectangle{
   display: none;
 }
@@ -419,5 +422,190 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
 }
+}
 /* #endregion first section */
+/* #region our-team */
+.our-team{
+  background-color: #f4f4fd;
+  padding: 96px 0;
+}
+.our-team .container {
+  flex-direction: column;
+}
+.our-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.our-team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.our-team-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: center;
+}
+.description {
+  padding: 32px 0;
+}
+.our-team-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  fill: #4d5ae5;
+  position: relative;
+  margin-top: 8px;
+}
+.icon {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+  height: 40px;
+}
+.icons-referense {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icons-referense:hover,
+.icons-referense:focus {
+  background-color: #404bbf;
+}
+.team-list {
+  background: #fff;
+  /* width: calc((100% - 72px) / 4); */
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.our-team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 0;
+}
+.icon-center {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #f4f4fd;
+}
+@media screen and (min-width: 768px){
+  .team-list{
+    width: calc((100% - 24px) / 2);
+  }
+  .our-team-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+}
+@media screen and (min-width: 1158px){
+.team-list{
+ width : calc((100% - 72px) / 4);
+}
+}
+
+/* #endregion our-team */
+
+/* #region our portfolio */
+.our-portfolio {
+  padding: 120px 0;
+}
+.our-portfolio .container{
+  flex-direction: column;
+}
+.portfolio {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  padding: 0;
+}
+
+.portfolio-list-item {
+  /* width: calc((100% - 48px) / 3); */
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.portfolio-list-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.portfolio-image-wraper {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-hover-p {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-list-item:hover .portfolio-image-wraper .portfolio-hover-p {
+  transform: translateY(0%);
+}
+@media screen and (min-width: 768px){
+  .portfolio-list-item{
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px){
+  .portfolio-list-item {
+     width: calc((100% - 48px) / 3);
+  }
+}
+/* #endregion our portfolio */
 
