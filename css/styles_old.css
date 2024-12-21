@@ -334,11 +334,11 @@
 /* #endregion our-team */
 
 /* #region footer */
-.footer {
+/* .footer {
   background: #2e2f42;
   padding: 100px 0;
-}
-.footer-logo {
+} */
+/* .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -348,11 +348,11 @@
   color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
-}
-.footer-logo-double-color {
+} */
+/* .footer-logo-double-color {
   color: #f4f4fd;
-}
-.footer-description {
+} */
+/* .footer-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -367,8 +367,8 @@
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-}
-.social-media {
+} */
+/* .social-media {
   width: 208px;
   height: 80px;
 }
@@ -377,7 +377,7 @@
 }
 .no-justify {
   justify-content: flex-start;
-}
+} */
 footer .our-team-icons {
   gap: 16px;
 }
