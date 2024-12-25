@@ -568,6 +568,8 @@ button {
 .team-list{
  width : calc((100% - 72px) / 4);
 }
+.our-team .container{
+  padding: 0; 
 }
 
 /* #endregion our-team */
